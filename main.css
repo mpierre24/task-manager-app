@@ -1,0 +1,82 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --blue: #A7C7E7;
+    --purple: #C3B1E1;
+    --red: #FF5733;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: white;
+
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--gray);
+    margin-bottom: 1rem;
+
+
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#new-todo-form {
+    display: flex;
+
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-todo-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-todo-input::placeholder {
+    color: var(--gray);
+}
+
+#new-todo-submit {
+    color: var(--red);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
