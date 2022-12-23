@@ -7,6 +7,9 @@
     --blue: #A7C7E7;
     --purple: #C3B1E1;
     --red: #FF5733;
+    --yellow: #F0ED21;
+    --green: #1FD113;
+
 }
 
 * {
@@ -34,7 +37,7 @@ header {
 header h1 {
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(--gray);
+    color: var(--blue);
     margin-bottom: 1rem;
 
 
@@ -79,4 +82,66 @@ button {
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1 rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#todos .todos {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#todos .todos .content .text {
+    color: var(--purple);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+
+}
+
+#todos .todos .content .text:not(:read-only) {
+    color: var(--yellow);
+}
+
+#todos .tasks .actions {
+    display: flex;
+    margin 0 -0.5rem;
+}
+
+.todos .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.todo .actions button:hover {
+    opacity: 0.8;
+
+}
+
+.todo .actions button:active {
+    opacity: 0.6;
+}
+
+.todo .actions .edit {
+    color: var(--yellow);
+}
+
+.todo .actions .delete {
+    color: var(--red);
 }
